@@ -10,6 +10,7 @@ let itemsToShow = 3; // Empezamos con 3 elementos visibles
 function moveCarousel() {
     const itemWidth = document.querySelector('.carousel-item').offsetWidth + 20; // Calculamos el ancho de la carta
     track.style.transform = `translateX(-${currentIndex * itemWidth}px)`; // Aplica una transformación a la pista del carousel para moverlo horizontalmente
+}
 
 // Función para cambiar el número de elementos visibles según el tamaño de pantalla
 function updateItemsToShow() {
@@ -49,4 +50,4 @@ window.addEventListener('resize', () => {
 // Al cargar la pagina, se llaman estas funciones
 updateItemsToShow(); // elementos visibles según el tamaño de pantalla
 moveCarousel(); // El carousel se mueve correctamente a la posicion inicial.
-}
+
