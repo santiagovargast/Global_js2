@@ -181,7 +181,7 @@ body::before {
     }
 }
 
-/* Ajuste del recuadro verde para moviles */
+/* Ajustes para moviles */
     @media (max-width: 600px) {
         .header h2 {
             left: 50%; 
@@ -190,6 +190,10 @@ body::before {
             height: 200px;
             font-size: 24px;
             top: 0; 
+        }
+
+        .content-wrapper {
+            margin-top: 50px;
         }
     }
 
@@ -200,9 +204,14 @@ body::before {
             transform: translateX(-50%); 
             width: auto;
             height: 200px;
-            font-size: 26px; 
+            font-size: 28px; 
             padding: 10px; 
             top: -20px;
+            margin-top: 180px;
+        }
+
+        .content-wrapper {
+            margin-top: 120px;
         }
         
         .carousel-item-content h3 {
